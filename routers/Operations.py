@@ -7,3 +7,7 @@ router = APIRouter()
 @router.get("/add/{Num1}/{Num2}")
 def Addition(Num1 : float, Num2 : float):
     return Logic.addition(Num1, Num2)
+
+@router.get("/sub/{Num1}/{Num2}")
+def Addition(Num1 : float, Num2 : float):
+    return Logic.subtract(Num1, Num2)
