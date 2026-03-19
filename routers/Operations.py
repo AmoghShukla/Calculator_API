@@ -15,3 +15,7 @@ def Subtraction(Num1 : float, Num2 : float):
 @router.get("/mul/{Num1}/{Num2}")
 def Multiplication(Num1 : float, Num2 : float):
     return Logic.multiply(Num1, Num2)
+
+@router.get("/div/{Num1}/{Num2}")
+def Division(Num1 : float, Num2 : float):
+    return Logic.divide(Num1, Num2)
